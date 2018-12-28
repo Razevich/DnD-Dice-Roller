@@ -1,3 +1,28 @@
-<p>
-  dice works!
-</p>
+<div class=dice-container>
+  <tr class=owned-dice>
+    <td class=dice *ngFor="let oneDice of dice"
+    (click)="addDice(oneDice)">
+      {{oneDice.name}}
+    </td>
+  </tr>
+</div>
+<div class=selected-dice *ngIf="selectedDice">
+  <tr class=selected-dice>
+    <td class=dice *ngFor="let dice of selectedDice"
+      (click)="removeDice(dice)">
+      {{dice.name}}
+    </td>
+  </tr>
+</div>
+<div>
+  <button (click)="roll()" 
+    >roll dice</button>
+  <button (click)="clear()">
+    clear selection</button>
+</div>
+<div>
+  <tr class=final-role>
+    <td class=dice *ngFor="let dice of finalRoll">{{dice}}</td>
+  </tr>
+</div>
+
