@@ -1,4 +1,4 @@
 export class Dice {
-    number: 'sides';
-    string: 'name';
+    sides: number;
+    name: string;
 }
