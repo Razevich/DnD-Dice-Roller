@@ -1,0 +1,15 @@
+.dice-container {
+
+    border: 1px solid grey;
+    display: table;
+}
+
+.selected-dice {
+    border: 1px solid blue;
+}
+
+.dice {
+    margin: auto;
+    align-items: center;
+    padding: 2em;
+}

@@ -10,7 +10,7 @@ export class DiceService {
 
   constructor() { }
 
-  getDice(): Observable<Dice[]> {
-    return of(OwnedDice);
+  getDice(): Dice[] {
+    return OwnedDice;
   }
 }
